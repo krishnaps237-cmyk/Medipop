@@ -1,0 +1,11 @@
+<h1>My Profile</h1>
+<p><strong>Username:</strong> {{ user.username }}</p>
+<p><strong>Email:</strong> {{ user.email }}</p>
+<p><strong>Name:</strong> {{ user.Name }}</p>
+<p><strong>Phone No:</strong> {{ user.Phone_no }}</p>
+<p><strong>License No:</strong> {{ user.License_no }}</p>
+<p><strong>Address:</strong> {{ user.Address }}</p>
+<p><strong>Last Login:</strong> {{ user.last_login }}</p>
+<p><strong>Date Joined:</strong> {{ user.date_joined }}</p>
+<p><strong>Is Active:</strong> {{ user.is_active }}</p>
+<button><a href="{% url 'edit_profile' %}">Edit Profile</a></button>

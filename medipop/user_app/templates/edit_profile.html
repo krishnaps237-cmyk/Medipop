@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><center>Edit profile</center></h1>
+    <form method="POST">
+         {%csrf_token%}
+        <label>Username</label>
+        <input type="text" value="{{user.username}}" name="Username"><br>
+        <label>Name</label>
+        <input type="text" name="name" value="{{user.Name}}"><br>
+        <label>Email</label>
+        <input type="email" name="email" value="{{user.email}}"><br>
+        <label>phone no</label>
+        <input type="text" name="phone" value="{{user.Phone_no}}  "><br>
+        <label>License no</label>
+        <input type="text" name="license" value="{{user.License_no}}"><br>
+        <label>Address</label>
+        <input type="text" name="Address" value="{{user.Address}}"><br>
+        <input type="submit" value="update">
+    </form>
+    
+    
+    <button><a href="\">index</a></button>
+</body>
+</html>

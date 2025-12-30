@@ -7,6 +7,11 @@
 </head>
 <body>
     <h1><center>LOGIN</center></h1>
+    {% if messages %}
+    {% for message in messages %}
+    <div>{{message}}</div>
+    {% endfor %}
+    {% endif  %}
     <form method="post">
         {%csrf_token%}
         <label>Username</label>
